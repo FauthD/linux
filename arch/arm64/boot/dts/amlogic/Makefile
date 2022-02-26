@@ -15,3 +15,13 @@ dtb-$(CONFIG_ARCH_MESON64_ODROIDN2) += meson64_odroidn2_drm.dtb
 
 subdir-$(CONFIG_ARCH_MESON64_ODROIDC4) += overlays/odroidc4
 subdir-$(CONFIG_ARCH_MESON64_ODROIDN2) += overlays/odroidn2
+
+dtb-y += sm1_s905x3_ac214.dtb
+dtb-y += sm1_s905x3_2g_1gbit.dtb
+dtb-y += sm1_s905x3_2g.dtb
+dtb-y += sm1_s905x3_4g_1gbit.dtb
+dtb-y += sm1_s905x3_4g.dtb
+dtb-y += sm1_s905x3_beelink_gt1mini2_2g.dtb
+dtb-y += sm1_s905x3_beelink_gt1mini2_4g.dtb
+dtb-y += sm1_s905x3_odroid_c4.dtb
+dtb-y += sm1_s905x3_odroid_hc4.dtb

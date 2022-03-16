@@ -326,10 +326,13 @@ static int build_dyn_power_table(struct cpufreq_cooling_device *cpufreq_device,
 		u32 freq_mhz, voltage_mv;
 		u64 power;
 
+#ifdef CONFIG_ARCH_MESON64_ODROIDN2
 		if (board_is_odroidn2()) {
 			if (i >= num_opps)
 				break;
-		} else {
+		} else 
+#endif
+		{
 			if (i >= num_opps) {
 				rcu_read_unlock();
 				ret = -EAGAIN;

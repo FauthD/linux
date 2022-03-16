@@ -43,9 +43,9 @@
 
 static struct dmc_monitor *dmc_mon;
 
-static unsigned long init_dev_mask   __initdata;
-static unsigned long init_start_addr __initdata;
-static unsigned long init_end_addr   __initdata;
+static unsigned long init_dev_mask;//   __initdata;
+static unsigned long init_start_addr;// __initdata;
+static unsigned long init_end_addr;//   __initdata;
 
 static int __init early_dmc_param(char *buf)
 {

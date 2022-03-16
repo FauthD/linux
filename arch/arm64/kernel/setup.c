@@ -82,12 +82,19 @@ u32 odroid_model(void)
 }
 
 static bool __odroid_amlogic_usb3 = true;
-
-bool odroid_amlogic_usb3(void)
+extern bool odroid_amlogic_usb3(void)
 {
 	return __odroid_amlogic_usb3;
 }
+#else
+extern bool odroid_amlogic_usb3(void)
+{
+	return false;
+}
+// const char *machine_name = "DF";
+// EXPORT_SYMBOL(machine_name);
 #endif
+
 
 /*
  * Standard memory resources

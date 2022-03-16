@@ -11,6 +11,7 @@
 
 #ifdef CONFIG_AMLOGIC_USB
 #include <linux/usb.h>
+extern bool odroid_amlogic_usb3(void);
 #endif
 
 #ifdef CONFIG_USB_CONFIGFS_UEVENT

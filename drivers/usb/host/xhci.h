@@ -34,6 +34,8 @@
 #include	"xhci-ext-caps.h"
 #include "pci-quirks.h"
 
+extern bool odroid_amlogic_usb3(void);
+
 /* xHCI PCI Configuration Registers */
 #define XHCI_SBRN_OFFSET	(0x60)
 

@@ -1,6 +1,9 @@
 #include <linux/pm.h>
 #include <linux/acpi.h>
 
+
+extern bool odroid_amlogic_usb3(void);
+
 #ifdef CONFIG_AMLOGIC_USB
 #define USB_HSET_TEST_VID    0x1A0A
 #endif
